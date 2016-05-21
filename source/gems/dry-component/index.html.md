@@ -31,5 +31,5 @@ This comes with a bunch of nice benefits:
 
 * Your system relies on abstractions rather than concrete classes and modules
 * It helps in decoupling your code from 3rd party code
-* It makes it possible to load components in complete isolation. In example you can run a single test for a single component and only required files will be loaded, or you can run a rake task and it will only load the things it needs.
+* It makes it possible to load components in complete isolation. For example you can run a single test for a single component and only required files will be loaded, or you can run a rake task and it will only load the things it needs.
 * It opens up doors to better instrumentation and debugging tools

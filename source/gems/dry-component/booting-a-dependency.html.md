@@ -24,7 +24,7 @@ Application.finalize(:persistence) do
 end
 ```
 
-After defining the finalization block our container will not call it until its own finalization. This means we can require file that defines our container and ask it to boot *just that one :persistence dependency*:
+After defining the finalization block our container will not call it until its own finalization. This means we can require a file that defines our container and ask it to boot *just that one :persistence dependency*:
 
 ``` ruby
 # under /my/app/boot/container.rb
