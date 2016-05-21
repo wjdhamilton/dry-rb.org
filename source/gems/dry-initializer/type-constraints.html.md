@@ -7,7 +7,7 @@ Use `:type` key in a `param` or `option` declarations to set a constraint.
 
 ### Plain Ruby Module (Class)
 
-You can constraint value by plain Ruby module/class.
+You can constrain a value with a plain Ruby module/class.
 
 ```ruby
 require 'dry-initializer'
@@ -68,7 +68,7 @@ There're many other ways to use dry types. See the [gem documentation][dry-types
 
 ### Case Equality
 
-Any object can be set as a constraint via [Ruby case equality method `===`][case-equality]:
+Any object can be used as a constraint with the [Ruby case equality method `===`][case-equality]:
 
 ```ruby
 require 'dry-initializer'
@@ -83,7 +83,7 @@ user = User.new name: 'Andrew' # => #<TypeError ...>
 user = User.new name: 'John'   # passes a constraint
 ```
 
-While this method uses the same mechanizm, it is slower than constraint by a module.
+While this method uses the same mechanism, it is slower than a constraint with a module.
 
 ### Types and Defaults
 

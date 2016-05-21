@@ -12,7 +12,7 @@ To add the plugin you have to:
 
 * register a builder when extending klass with the plugin.
 
-In the following example we add plugin that reports a value of the argument into stdin:
+In the following example we add a plugin that reports a value of the argument into stdin:
 
 ### String-Builder Example
 

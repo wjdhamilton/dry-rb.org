@@ -47,7 +47,7 @@ order.customer # => <Customer @id=1 ...>
 order.product  # => <Product @id=2 ...>
 ```
 
-The instance is envoked using method `find_by(id: ...)`.
+The instance is invoked using method `find_by(id: ...)`.
 With wrong ids `nil` values are assigned to corresponding params and options:
 
 ```ruby

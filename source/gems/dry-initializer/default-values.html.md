@@ -24,7 +24,7 @@ user.name  # => 'Vladimir'
 user.email # => 'vladimir@example.com'
 ```
 
-You cannot define required **parameter** after optional one. The following example raises `SyntaxError` exception:
+You cannot define required a **parameter** after an optional one. The following example raises a `SyntaxError` exception:
 
 ```ruby
 require 'dry-initializer'
@@ -58,7 +58,7 @@ user = User.new
 
 You **must** wrap default values into procs.
 
-If you need to **assign** proc as a default value, wrap it to another one:
+If you need to **assign** a proc as a default value, wrap it to another one:
 
 ```ruby
 require 'dry-initializer'
@@ -73,7 +73,7 @@ user = User.new
 user.name_proc.call # => 'Unknown user'
 ```
 
-Proc will be executed in a scope of new instance. You can refer to other arguments:
+The proc will be executed in the scope of a new instance. You can refer to other arguments:
 
 ```ruby
 require 'dry-initializer'
@@ -89,7 +89,7 @@ user = User.new 'Andrew'
 user.email # => 'andrew@example.com'
 ```
 
-**Warning**: when using lambdas instead of procs, don't forget an argument, required by [instance_eval][instance_eval] (you can skip in in a proc).
+**Warning**: when using lambdas instead of procs, don't forget an argument, required by [instance_eval][instance_eval] (you can skip this in a proc).
 
 ```ruby
 require 'dry-initializer'

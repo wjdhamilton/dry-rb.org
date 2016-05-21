@@ -38,7 +38,7 @@ user.role  # => 'admin'
 user.admin # => true
 ```
 
-This is pretty the same as the following ruby code:
+This is pretty much the same as the following ruby code:
 
 ```ruby
 class User
